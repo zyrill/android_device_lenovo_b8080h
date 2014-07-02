@@ -1,0 +1,11 @@
+#recovery.fstab
+#<src>                                         <mnt_point>  <type>  <mnt_flags and options>  <fs_mgr_flags>
+
+/boot      /dev/block/platform/msm_sdcc.1/by-name/boot emmc                   defaults      defaults
+/cache     /dev/block/platform/msm_sdcc.1/by-name/cache ext4                  defaults      wait
+/data      /dev/block/platform/msm_sdcc.1/by-name/userdata ext4               defaults      wait
+/misc      /dev/block/platform/msm_sdcc.1/by-name/misc emmc                   defaults      defaults
+/recovery  /dev/block/platform/msm_sdcc.1/by-name/recovery emmc               defaults      defaults
+/sdcard    /dev/block/mmcblk1p1 vfat                                          defaults      defaults	removable
+/system    /dev/block/platform/msm_sdcc.1/by-name/system ext4                 defaults      wait
+/sd-ext    /dev/block/mmcblk1p2 ext4                                          defaults      defaults	removable
