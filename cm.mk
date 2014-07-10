@@ -2,15 +2,15 @@
 $(call inherit-product, vendor/cm/config/gsm.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := B8080
+PRODUCT_RELEASE_NAME := b8080h
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/LENOVO/B8080/device_B8080.mk)
+$(call inherit-product, device/lenovo/b8080h/device_b8080h.mk)
 
-LOCAL_PATH := device/LENOVO/B8080
+LOCAL_PATH := device/lenovo/b8080h
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
 else
@@ -21,8 +21,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := B8080
-PRODUCT_NAME := cm_B8080
-PRODUCT_BRAND := LENOVO
-PRODUCT_MODEL := B8080
-PRODUCT_MANUFACTURER := LENOVO
+PRODUCT_DEVICE := b8080h
+PRODUCT_NAME := cm_b8080h
+PRODUCT_BRAND := lenovo
+PRODUCT_MODEL := b8080h
+PRODUCT_MANUFACTURER := lenovo

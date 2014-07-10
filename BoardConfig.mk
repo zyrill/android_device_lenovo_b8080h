@@ -2,7 +2,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
-# -include vendor/LENOVO/B8080/BoardConfigVendor.mk
+# -include vendor/lenovo/b8080h/BoardConfigVendor.mk
 
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
@@ -11,7 +11,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --dt device/LENOVO/B8080/dt.img --ramdisk_offset 0x02000000 --tags_offset 01e00000
+BOARD_MKBOOTIMG_ARGS := --dt device/lenovo/b8080h/dt.img --ramdisk_offset 0x02000000 --tags_offset 01e00000
 
 #COMMON_GLOBAL_CFLAGS += -DQCOM_BSP
 
@@ -19,7 +19,7 @@ TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 #TARGET_BOARD_PLATFORM := MSM8228
 TARGET_BOARD_PLATFORM := unknown
-TARGET_BOOTLOADER_BOARD_NAME := B8080
+TARGET_BOOTLOADER_BOARD_NAME := b8080h
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
@@ -27,7 +27,7 @@ TARGET_CPU_VARIANT := cortex-a7
 #TARGET_GLOBAL_CFLAGS += -mfpu=neon-vfpv4 -mfloat-abi=softfp
 #TARGET_GLOBAL_CPPFLAGS += -mfpu=neon-vfpv4 -mfloat-abi=softfp
 TARGET_NO_BOOTLOADER := true
-TARGET_PREBUILT_KERNEL := device/LENOVO/B8080/kernel
+TARGET_PREBUILT_KERNEL := device/lenovo/b8080h/kernel
 TARGET_POWERHAL_VARIANT := cm
 #TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 #TARGET_USES_QCOM_BSP := true
@@ -60,5 +60,5 @@ TW_NEVER_UNMOUNT_SYSTEM := false
 TW_INCLUDE_INJECTTWRP := false 
 TW_DEFAULT_EXTERNAL_STORAGE := false 
 TWRP_EVENT_LOGGING := false 
-TARGET_PREBUILT_RECOVERY_KERNEL := device/LENOVO/B8080/kernel 
+TARGET_PREBUILT_RECOVERY_KERNEL := device/lenovo/b8080h/kernel 
 

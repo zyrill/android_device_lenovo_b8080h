@@ -1,7 +1,7 @@
-android_device_LENOVO_B8080
+android_device_lenovo_b8080h
 ===========================
 
-Cyanogenmod device tree for the Lenovo Yoga 10 HD+ B8080
+Cyanogenmod device tree for the Lenovo Yoga 10 HD+ B8080-H
 
 
 ### Information on the device###
