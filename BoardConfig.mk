@@ -11,7 +11,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --dt device/LENOVO/B8080/dt.img --ramdisk_offset 0x01000000 --tags_offset 0x00000100
+BOARD_MKBOOTIMG_ARGS := --dt device/LENOVO/B8080/dt.img --ramdisk_offset 0x02000000 --tags_offset 01e00000
 
 #COMMON_GLOBAL_CFLAGS += -DQCOM_BSP
 
