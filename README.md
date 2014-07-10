@@ -3,6 +3,8 @@ android_device_lenovo_b8080h
 
 Cyanogenmod device tree for the Lenovo Yoga 10 HD+ B8080-H
 
+Using this repository allows you to build CWM, the custom recovery system of Cyanogenmod for the b8080-h.
+
 
 ### Information on the device###
 Lenovo B8080-H Yoga 10 HD+ B8080_S003191_140515_ROW_3GData 4.3 Stock Stock Partition Inf.
