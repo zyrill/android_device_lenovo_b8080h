@@ -19,6 +19,8 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 an
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_FLASH_BLOCK_SIZE := 131072
+BOARD_MKBOOTIMG_ARGS := --dt device/LENOVO/B8080/dt.img --ramdisk_offset 0x01000000 --tags_offset 0x00000100
+BOARD_HAS_NO_SELECT_BUTTON := true
 
 # fix this up by examining /proc/mtd on a running device
 # boot -> /dev/block/mmcblk0p10 fdisk -l /dev/block/mmcblk0p10 16777216 bytes
@@ -31,8 +33,6 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1610612736
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12949896704 
 
 TARGET_PREBUILT_KERNEL := device/LENOVO/B8080/kernel
-
-BOARD_HAS_NO_SELECT_BUTTON := true
 
 # TWRP
 DEVICE_RESOLUTION := 1920x1200 
