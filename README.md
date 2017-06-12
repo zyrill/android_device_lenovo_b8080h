@@ -1,6 +1,8 @@
 android_device_lenovo_b8080h
 ===========================
 
+Take note: you should proceed with extreme caution when trying to install this. Basically, only try this out if you're a kernel hacker. You're in extreme danger of bricking your device.
+
 Cyanogenmod device tree for the Lenovo Yoga 10 HD+ B8080-H
 
 Using this repository allows you to build CWM, the custom recovery system of Cyanogenmod for the b8080-h.
