@@ -8,8 +8,8 @@ Cyanogenmod device tree for the Lenovo Yoga 10 HD+ B8080-H
 Using this repository allows you to build CWM, the custom recovery system of Cyanogenmod for the b8080-h.
 
 
-### Information on the device###
-Lenovo B8080-H Yoga 10 HD+ B8080_S003191_140515_ROW_3GData 4.3 Stock Stock Partition Inf.
+### Information on the device ###
+`Lenovo B8080-H Yoga 10 HD+ B8080_S003191_140515_ROW_3GData 4.3 Stock Stock Partition Inf.
 
 Model: Lenovo B8080-H
 Board: MSM8226
@@ -22,10 +22,10 @@ Android Version: 4.3
 Kernel Arch: armv7l
 Kernel Version: 3.4.0-ga94d719-00044-g35ddd9d (B8080_S003191_140515_ROW_3GData)
 Build Version: B8080_S003191_140515_ROW_3GData
-SW-VER: B8080_140404
+SW-VER: B8080_140404`
 
 ### Output of cat /proc/partitions ###
-major minor  #blocks  name
+`major minor  #blocks  name
 
    7        0      17703 loop0
  179        0   15267840 mmcblk0
@@ -58,10 +58,10 @@ major minor  #blocks  name
  179       32       4096 mmcblk0rpmb
  254        0      17703 dm-0
  179       64   31166976 mmcblk1
- 179       65   31162880 mmcblk1p1
+ 179       65   31162880 mmcblk1p1`
 
 ### Output of ls -al /dev/block/platform/msm_sdcc.1/by-name/ ###
-lrwxrwxrwx root     root              1970-02-15 15:52 DDR -> /dev/block/mmcblk0p5
+`lrwxrwxrwx root     root              1970-02-15 15:52 DDR -> /dev/block/mmcblk0p5
 lrwxrwxrwx root     root              1970-02-15 15:52 aboot -> /dev/block/mmcblk0p6
 lrwxrwxrwx root     root              1970-02-15 15:52 abootbak -> /dev/block/mmcblk0p7
 lrwxrwxrwx root     root              1970-02-15 15:52 boot -> /dev/block/mmcblk0p10
@@ -86,10 +86,10 @@ lrwxrwxrwx root     root              1970-02-15 15:52 ssd -> /dev/block/mmcblk0
 lrwxrwxrwx root     root              1970-02-15 15:52 system -> /dev/block/mmcblk0p17
 lrwxrwxrwx root     root              1970-02-15 15:52 tz -> /dev/block/mmcblk0p11
 lrwxrwxrwx root     root              1970-02-15 15:52 tzbak -> /dev/block/mmcblk0p12
-lrwxrwxrwx root     root              1970-02-15 15:52 userdata -> /dev/block/mmcblk0p26
+lrwxrwxrwx root     root              1970-02-15 15:52 userdata -> /dev/block/mmcblk0p26`
 
 ### Output of parted /dev/block/mmcblk0 ###
-GNU Parted 1.8.8.1.179-aef3
+`GNU Parted 1.8.8.1.179-aef3
 Using /dev/block/mmcblk0
 Welcome to GNU Parted! Type 'help' to view a list of commands.
 (parted) print
@@ -126,10 +126,10 @@ Number  Start   End     Size    File system  Name      Flags
 23      2550MB  2552MB  1573kB               fsg
 24      2617MB  2617MB  1024B                fsc
 25      2617MB  2617MB  8192B                ssd
-26      2684MB  15.6GB  12.9GB  ext4         userdata
+26      2684MB  15.6GB  12.9GB  ext4         userdata`
 
 ### Output of cat /proc/mounts ###
-rootfs / rootfs ro,relatime 0 0
+`rootfs / rootfs ro,relatime 0 0
 tmpfs /dev tmpfs rw,seclabel,nosuid,relatime,size=962644k,nr_inodes=182058,mode=755 0 0
 devpts /dev/pts devpts rw,seclabel,relatime,mode=600 0 0
 proc /proc proc rw,relatime 0 0
@@ -153,5 +153,4 @@ none /dev/cpuctl cgroup rw,relatime,cpu 0 0
 /dev/fuse /storage/emulated/legacy fuse rw,nosuid,nodev,relatime,user_id=1023,group_id=1023,default_permissions,allow_other 0 0
 /dev/block/dm-0 /mnt/asec/[0]com.sketchbook-1 ext4 ro,dirsync,seclabel,nosuid,nodev,noatime 0 0
 /dev/block/vold/179:65 /storage/sdcard1 vfat rw,dirsync,nosuid,nodev,noexec,relatime,uid=1000,gid=1015,fmask=0702,dmask=0702,allow_utime=0020,codepage=cp437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro 0 0
-/dev/block/vold/179:65 /mnt/secure/asec2 vfat rw,dirsync,nosuid,nodev,noexec,relatime,uid=1000,gid=1015,fmask=0702,dmask=0702,allow_utime=0020,codepage=cp437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro 0 0
-
+/dev/block/vold/179:65 /mnt/secure/asec2 vfat rw,dirsync,nosuid,nodev,noexec,relatime,uid=1000,gid=1015,fmask=0702,dmask=0702,allow_utime=0020,codepage=cp437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro 0 0`
