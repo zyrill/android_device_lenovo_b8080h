@@ -159,3 +159,36 @@ none /dev/cpuctl cgroup rw,relatime,cpu 0 0
 /dev/block/vold/179:65 /storage/sdcard1 vfat rw,dirsync,nosuid,nodev,noexec,relatime,uid=1000,gid=1015,fmask=0702,dmask=0702,allow_utime=0020,codepage=cp437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro 0 0
 /dev/block/vold/179:65 /mnt/secure/asec2 vfat rw,dirsync,nosuid,nodev,noexec,relatime,uid=1000,gid=1015,fmask=0702,dmask=0702,allow_utime=0020,codepage=cp437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro 0 0
 ```
+
+### OP from xda-developers
+```
+I'd appreciate help porting CWM and Cyanogenmod! Please post, fork, request merges etc...
+I've managed to compile CWM for the Lenovo Yoga 10 HD+
+My repository is here: https://github.com/zyrill/android_device_lenovo_b8080h
+And the CWM recovery image is attached. Use towelroot by geohot to root your tablet.
+Before attempting to flash, you should:
+    make sure you know what you're doing!
+    double check that you're flashing the right partition!
+
+If you flash the wrong partition, you'll brick your tablet!
+You can check your partition layout with
+Code:
+
+$ ls -al /dev/block/platform/msm_sdcc.1/by-name/
+
+
+Once rooted, you can flash the image as follows:
+Code:
+
+$ adb push recovery.img /storage/sdcard0/recovery.img
+$ adb shell
+$ dd if=/storage/sdcard0/recovery.img of=/dev/block/mmcblk0p21
+
+
+Enjoy!
+
+Changelog:
+
+v 0.1: Initial version. Known issue: can't yet mount /sdcard and external cards
+v 0.2: Backup is operative! Known issues: no option to backup to external storage, no option to skip backing up of external storage, date is not set correctly
+```
